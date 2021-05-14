@@ -1,0 +1,19 @@
+Python 3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import random
+>>> correct = random.randint(1,9)
+>>> gameOver = False
+>>>
+>>> while gameOver == False:
+...     guess = int(input("Enter your guess"))
+...     if guess == correct:
+...         print("You Win")
+...         gameOver = True
+...     elif guess > correct:
+...         print("Your guess is too big")
+...     elif guess < correct:
+...         print("Your guess is too small")
+...
+Enter your guess9
+You Win
+>>>
